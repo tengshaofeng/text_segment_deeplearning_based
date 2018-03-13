@@ -19,4 +19,6 @@ dataset.txt save the label like：
 python CharacterSegmentTrain.py
 
 # experiment result
-
+https://github.com/tengshaofeng/text_segment_deeplearning_based/tree/master/result/IFSK_CC@%S`SCTD2YY%PZ5B.jpg
+https://github.com/tengshaofeng/text_segment_deeplearning_based/tree/master/result/P81LF(I0444O@(GRGXL19@3.png
+https://github.com/tengshaofeng/text_segment_deeplearning_based/tree/master/result/微信图片_20170524142730.jpg
