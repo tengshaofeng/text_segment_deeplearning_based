@@ -1,0 +1,19 @@
+代码功能： 基于给定文本行，实现单个字的图像分割
+于192.168.50.194服务器上位置：/home/tengbaoqiang/tbq_virtual_evn/text_segment
+
+dataset_gen.py用于生成合成的样本。
+
+gen_imgs存放所有用于训练的样本图片，大小均为1024*48
+
+dataset.txt存放样本标签，形如：
+['0.png', 0, 36, 45, 82, 87, 126, 129, 167, 172, 209, 215, 252, 253, 290, 305, 341, 354, 392, 393, 433, 435, 473]
+['1.png', 11, 47, 56, 94, 99, 135, 141, 177, 179, 218, 232, 268, 273, 311, 326, 365, 368, 408, 421, 461, 461, 5]
+即[图片，对应的分割点所在的横坐标序列]  坐标包含于[0, 1024]
+
+准备好数据之后， 更改CharacterSegmentTrain.py中的mode为'train'，
+执行python CharacterSegmentTrain.py即可训练，训练的模型保存在/logs中
+
+更改CharacterSegmentTrain.py中的mode为'inference'，准备测试数据图片放在/real_test_imgs中
+执行python CharacterSegmentTrain.py即可看到测试结果，保存在/result中
+参考：
+Chinese/English mixed Character Segmentation as Semantic Segmentation. Huabin Zheng
